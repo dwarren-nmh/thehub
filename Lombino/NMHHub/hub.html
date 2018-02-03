@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NMH Hub</title>
+  <link rel="stylesheet" type="text/css" href="hub.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="hub.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <div class="btn-group-vertical">
+    </div>
+  </div>
+
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-custom p-4">
+        <div class="btn-group-vertical">
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-custom">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Page content -->
+  <div id="main">
+
+    <header>
+      <h1>The Hub</h1>
+    </header>
+
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <div class="input-group">
+            <input type="text" id="search" class="form-control" width="60%" placeholder="Search for..." aria-label="Search for...">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-custom" id="students">Student</button>
+        <button type="button" class="btn btn-custom" id="allBtn">All</button>
+        <button type="button" class="btn btn-custom" id="employees">Employee</button>
+      </div>
+    </div>
+
+      <div class="row">
+        <div id="test">
+          <ul id="results">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

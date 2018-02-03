@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  background-color: #111;
+  /*dark blue: #005b94
+  light blue: #519dd0*/
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The sidebar menu */
+
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 280px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 100;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #519dd0;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 200px;
+}
+
+
+/* Style page content */
+
+#main {
+  margin-left: 280px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.btn-group-vertical {
+  width: 100%;
+  text-align: left;
+}
+
+.btn-group-vertical button {
+  height: 80px;
+  font-size: 130%;
+  background-color: #519dd0;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-group-vertical button:hover{
+  background-color: #005b94 !important;
+}
+
+header {
+  font-size: 80px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+
+#search {
+  font-size: 20px;
+}
+
+.col-md-4 {
+  padding-top: 20px;
+}
+
+.btn-group{
+  padding-top: 20px;
+}
+
+#allBtn{
+  background-color: #519dd0;
+}
+
+.btn-custom{
+  background-color: #005b94;
+  color: white;
+}
+
+
+
+.pos-f-t{
+  display: none;
+}
+.sidenav {
+  display: block;
+}
+
+@media screen and (max-width: 660px) {
+  .pos-f-t{
+    display: block;
+  }
+  .sidenav {
+    display: none;
+  }
+  #main{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.bg-custom{
+  background-color: #111 !important;
+  color: white;
+}
+
+.pos-f-t .btn-group-vertical{
+  border: none;
+}
+
+li{
+  background-color: #005b94;
+  margin-bottom: 20px;
+  padding: 10px;
+  list-style-type: none;
+  width: 300px;
+}
+
+li a{
+  color: white !important;
+}
+
+li a:hover{
+  text-decoration: none !important;
+}
+
+@media screen and (min-width: 1000px) {
+#results {
+    margin-top: 40px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; /*3 is just placeholder -- can be anything*/
+}
+
+#results li {
+    display: inline-block;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 1340px) {
+/*styling adapted from: http://jsfiddle.net/glee/Fa722/*/
+#results {
+    margin-top: 40px;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; /*3 is just placeholder -- can be anything*/
+}
+
+#results li {
+    display: inline-block;
+    text-align: center;
+}
+}
+
+#results{
+  padding: 10px;
+  background-color: #005b94;
+  margin: 40px;
+}
+#results li:hover{
+  background-color: #8E2F44;
+}

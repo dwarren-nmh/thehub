@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html{ width:100%; height:100%;
+      background:#5B96DE url(background.jpg) center center no-repeat;
+      background-attachment: fixed;
+      background-size:cover;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.subCat {
+	margin-top: -1em;
+	margin-bottom: -1em;
+	padding: .5em !important;
+}
+
+.notVis {
+	/*display:none !important;*/
+	height: 15px !important;
+	font-size: .5em;
+}
+
+.collapsible-header {
+	height: 53px;
+	font-weight: bold;
+	transition: height .4s, font-size .4s;
+}
+
+.collapsible-header a {
+	font-weight: normal;
+	color: #4D6EF0;
+	width: 100%;
+}
+.collapsible-header:not(.notVis) a::after {
+	content: url(arrow.png);
+	padding-left: .25em;
+}
+
+.searchCont {
+    background-color: rgba(86,86,86,0.8) !important;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+}
+
+.input-field {
+    margin-top: 20px !important;
+}
+.results {
+    transition: height 4s;
+}
+.maincont {
+    margin-top: 0 !important;
+	padding: 0 !important;
+	background-color: white;
+}
+.resultsIn {
+    display: none !important;
+}
